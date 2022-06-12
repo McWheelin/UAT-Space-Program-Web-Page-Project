@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="UAT Space Program Web Page CSS.css">
+  <script src="UAT Space Program Web Page JS.js"></script>
+  <title>UAT Space Program</title>
+
+ 
+
+</head>
+
+<img src="UATspaceLogo-2.jpg">
+
+<body>
+  
+  <h1 id="demo">UAT Space Program</h1>
+
+ 
+     
+    <!-- follow me template -->
+    <div class="made-with-love">
+      Made with
+      <i>♥</i> by
+      <a target="_blank" href="UAT Space Program Web Page Table HTML3.html">Table</a>
+    </div>
+
+
+  <script>
+     
+       /*
+          Justice McNeeley
+          6/5/22
+          UAT Space Program Assignment
+       */
+
+      // alerting the user
+      alert('welcome to the UAT Space Program')
+      //trying create a password frase
+      confirm("do you wish to confirm launch?")
+      // document testing
+      document.write("<p>Test of the Paragraph tags</p><p>Test of the document write function<p>")
+      
+        
+     
+  </script>
+  
+<p> The Launch will begin in <span id="countdowntimer">10 </span> Seconds</p>
+
+<script type="text/javascript"> // my easy timer
+  var timeleft = 10;
+  var downloadTimer = setInterval(function(){
+  timeleft--;
+  document.getElementById("countdowntimer").textContent = timeleft;
+  if(timeleft <= 0)
+      clearInterval(downloadTimer); a
+  },1000);
+  
+</script>
+<script>document.getElementById("DisplayCountdown").innerHTML = countdown;</script>
+
+
+ <script>
+ const myTimeout = setTimeout(myGreeting, 10000);
+ 
+ function myGreeting() {
+   document.getElementById("demo").innerHTML = "BLAST OFF!!!"
+ }
+ /*
+ function myStartFunction() {
+   clearTimeout(myTimeout);
+ }
+ function myStartFunction() {
+   clearTimeout(myTimeout);
+ }
+ */
+
+/* setTimeout(function() { document.write("warning"); },6000)*/
+
+ </script>
+
+
+<script>
+ 
+  function playAudio()
+  {
+    var audio = new Audio("SFuatcountdown.mp3");
+    audio.autoplay();
+  }
+ 
+  audio.autoplay = true;
+ 
+ </script>
+
+<script>
+
+// half way timer
+myTimeout = setTimeout(myGreeting, 5000)
+
+function myGreeting() {
+    document.getElementById('demo').innerHTML = "Warning Less than ½ way to launch, time left = 5seconds"
+}
+
+
+</script>
+
+
+
+
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UAT Space Program Web Page CSS.css">
+    <script src="UAT Space Program Web Page JS.js"></script>
+    <title>UAT space program table</title>
+</head>
+<body>
+    
+
+    <section>
+        <!--for demo wrap-->
+        <h1>UAT Space Program</h1>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>Data Type</th>
+                <th>Reading</th>
+               
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <td>Time elapsed:</td>
+                <td id = "TE">0</td>
+                
+              </tr>
+              <tr>
+                <td>Latitude:</td>
+                <td id = "LAT">0</td>
+               
+              <tr>
+                <td>Longitude:</td>
+                <td id = "LONG">0</td>
+             
+              </tr>
+              <tr>
+                <td>GPS altitude:</td>
+                <td id = "GPSA">0</td>
+               
+              </tr>
+              <tr>
+                <td>BMP sensor altitude:</td>
+                <td id = "BMPA">0</td>
+               
+              <tr>
+                <td>BMP sensor pressure:</td>
+                <td id = "BMPSP">0</td>
+              
+              </tr>
+              <tr>
+                <td>BMP sensor temperature:</td>
+                <td id = "BMPST">0</td>
+
+              </tr>
+              <tr>
+                <td>Digital sensor temperature:</td>
+                <td id = "DST">0</td> 
+            
+              </tr>
+              <tr>
+                <td>CSS sensor temperature:</td>
+                <td id = "CSSST">0</td>
+              
+              </tr>
+              <tr>
+                <td>CSS sensor eCO2:</td>
+                <td id = "CSSSECO2">0</td>
+              
+              </tr>
+              <tr>
+                <td>CSS sensor TVOC:</td>
+                <td id = "CSSSTVOC">0</td>
+              
+              </tr>
+              <tr>
+                <td>UV:</td>
+                <td id = "UV">0</td>
+               
+              </tr>
+              <tr>
+                <td>Accel X:</td>
+                <td id = "AX">0</td>
+               
+              </tr>
+              <tr>
+                <td>Accel Y:</td>
+                <td id = "AY">0</td>
+            
+              </tr>
+              <tr>
+                <td>Accel Z:</td>
+                <td id = "AZ">0</td>
+            
+              </tr>
+              <tr>
+                <td>Magnetic X:</td>
+                <td id = "MX">0</td>
+               
+              </tr>
+              <tr>
+                <td>Magnetic Y:</td>
+                <td id = "MY">0</td>
+              
+              </tr>
+              <tr>
+                <td>Magnetic Z:</td>
+                <td id = "MZ">0</td>
+                
+              </tr>
+              <tr>
+                <td>Gyro X:</td>
+                <td id = "GX">0</td>
+               
+              </tr>
+              <tr>
+                <td>Gyro Y:</td>
+                <td id = "GY">0</td>
+           
+              </tr>
+              <tr>
+                <td>Gyro Z:</td>
+                <td id = "GZ">0</td>
+              
+              </tr>
+              
+            </tbody>
+          </table>
+
+          <script>
+
+            var smartWatchData = ["15 seconds",0, 0, 0, 30383.04, 2.34, 0, 24.12, 25, 400, 0, 0, -0.87, -0.02, 9.61, 0.13, 0.67, -0.24, 4.66, 0.01, -0.4];
+
+              function importData(){
+
+                document.getElementById("TE").innerHTML = smartWatchData[0]
+                document.getElementById("LAT").innerHTML = smartWatchData[1]
+                document.getElementById("LONG").innerHTML = smartWatchData[2]
+                document.getElementById("GPSA").innerHTML = smartWatchData[3]
+                document.getElementById("BMPA").innerHTML = smartWatchData[4]
+                document.getElementById("BMPSP").innerHTML = smartWatchData[5]
+                document.getElementById("BMPST").innerHTML = smartWatchData[6]
+                document.getElementById("DST").innerHTML = smartWatchData[7]
+                document.getElementById("CSSST").innerHTML = smartWatchData[8]
+                document.getElementById("CSSSECO2").innerHTML = smartWatchData[9]
+                document.getElementById("CSSSTVOC").innerHTML = smartWatchData[10]
+                document.getElementById("UV").innerHTML = smartWatchData[11]
+                document.getElementById("AX").innerHTML = smartWatchData[12]
+                document.getElementById("AY").innerHTML = smartWatchData[13]
+                document.getElementById("AZ").innerHTML = smartWatchData[14]
+                document.getElementById("MX").innerHTML = smartWatchData[15]
+                document.getElementById("MY").innerHTML = smartWatchData[16]
+                document.getElementById("MZ").innerHTML = smartWatchData[17]
+                document.getElementById("GX").innerHTML = smartWatchData[18]
+                document.getElementById("GY").innerHTML = smartWatchData[19]
+                document.getElementById("GZ").innerHTML = smartWatchData[20]
+                document.getElementById("").innerHTML = smartWatchData[21]
+
+              }
+
+              function resetData(){
+
+                document.getElementById("TE").innerHTML = +0
+                document.getElementById("LAT").innerHTML = +0
+                document.getElementById("LONG").innerHTML = +0
+                document.getElementById("GPSA").innerHTML = +0
+                document.getElementById("BMPA").innerHTML = +0
+                document.getElementById("BMPSP").innerHTML = +0
+                document.getElementById("BMPST").innerHTML = +0
+                document.getElementById("DST").innerHTML = +0
+                document.getElementById("CSSST").innerHTML = +0
+                document.getElementById("CSSSECO2").innerHTML = +0
+                document.getElementById("CSSSTVOC").innerHTML = +0
+                document.getElementById("UV").innerHTML = +0
+                document.getElementById("AX").innerHTML = +0
+                document.getElementById("AY").innerHTML = +0
+                document.getElementById("AZ").innerHTML = +0
+                document.getElementById("MX").innerHTML = +0
+                document.getElementById("MY").innerHTML = +0
+                document.getElementById("MZ").innerHTML = +0
+                document.getElementById("GX").innerHTML = +0
+                document.getElementById("GY").innerHTML = +0
+                document.getElementById("GZ").innerHTML = +0
+                document.getElementById("").innerHTML = +0
+
+
+
+
+              }
+
+              
+
+
+
+          </script>
+
+        </div>
+      </section>
+      
+      
+      <p>Press Start</p>
+      <input id="btnStart" type="button" value="Start"
+          onclick="importData();" />
+      <input id="btnStop" type="button" value="resetData"
+          onclick="resetData();" />
+
+
+</body>
+</html>
